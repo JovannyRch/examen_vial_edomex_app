@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:guia_examen_de_licencia_de_conducir_edomex/screens/home_screen.dart';
 
 void main() => runApp(const MyApp());
 
@@ -7,16 +8,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       title: 'Examen Víal Edomex',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Material App Bar'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
-      ),
+      debugShowCheckedModeBanner: false,
+      home: HomeScreen(),
     );
   }
 }
