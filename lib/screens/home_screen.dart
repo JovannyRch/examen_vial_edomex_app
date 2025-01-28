@@ -17,17 +17,17 @@ class HomeScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             // Botón para el Modo Estudio
-            _homeButton('Modo Estudio', () {
+            _homeButton('Guía de Estudio', () {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const StudyMode()),
               );
             }),
             const SizedBox(height: 20),
-            _homeButton('Modo Prueba', () {}),
+            _homeButton('Examen de prueba', () {}),
             const SizedBox(height: 20),
             // Botón para el Examen
-            _homeButton('Presentar Examen Final', () {}),
+            _homeButton('Examen Final', () {}),
             const SizedBox(height: 20),
             _homeButton('Estadísticas', () {})
           ],

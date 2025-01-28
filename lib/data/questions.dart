@@ -120,212 +120,286 @@ final List<Question> questions = [
   ),
   Question(
     id: 16,
-    text: '',
-    options: [''],
+    text:
+        '¿Cuándo deben de ir acompañados por una persona mayor, los menores de edad con un permiso provisional de práctica?',
+    options: ['Siempre y el acompañante deberá portar una licencia vigente'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 17,
-    text: '',
-    options: [''],
+    text:
+        'Todos los vehículos automotores de uso particular deberán contar con:',
+    options: [
+      'Póliza de seguro de responsabilidad civil vigente que ampare al menos daños a terceros en su persona y en su patrimonio'
+    ],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 18,
-    text: '',
-    options: [''],
+    text: 'Son causas de cancelación de la licencia:',
+    options: [
+      'Manejar bajo los efectos de drogas enervantes o psicotrópicos, así como, conducir en estado de ebriedad.'
+    ],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 19,
-    text: '',
-    options: [''],
+    text:
+        '¿Qué deben de hacer los conductores cuando el semáforo se encuentra en luz roja?',
+    options: [
+      'Detener su vehículo en la línea de “alto”, sin invadir la zona para cruce de los peatones'
+    ],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 20,
-    text: '',
-    options: [''],
+    text:
+        '¿Está permitido realizar llamadas por el celular mientras conduce un vehículo?',
+    options: ['No está permitido'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 21,
-    text: '',
-    options: [''],
+    text:
+        '¿En qué casos pueden circular los conductores de motocicletas por las banquetas y áreas reservadas a los peatones?',
+    options: ['En ningún caso'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 22,
-    text: '',
-    options: [''],
+    text:
+        '¿Cuánto como máximo, puede sobresalir la carga de las dimensiones laterales de un vehículo?',
+    options: ['1 metro'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 23,
-    text: '',
-    options: [''],
+    text:
+        '¿Cuál es la sanción cuando un conductor no acata las restricciones de circulación de los programas ambientales?',
+    options: ['Multa de 20 UMAs y retención del vehículo'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 24,
-    text: '',
-    options: [''],
+    text:
+        '¿Cuál es la sanción o multa por conducir un automotor, abrazado a una persona o a un objeto?',
+    options: ['Multa de 20 UMAs'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 25,
-    text: '',
-    options: [''],
+    text: '¿Qué tipo de vehículos podrán circular en carriles de contraflujo?',
+    options: ['Vehículos de emergencia, patrullas, ambulancias y bomberos'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 26,
-    text: '',
-    options: [''],
+    text:
+        '¿Qué sanción se aplica cuándo los datos de la placa no coinciden con los del engomado, la calcomanía o la tarjeta de circulación?',
+    options: ['Multa de 20 UMAs y retención del vehículo'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 27,
-    text: '',
-    options: [''],
+    text:
+        '¿En qué casos deberán ser presentados ante las autoridades competentes, las personas y vehículos involucrados en un accidente?',
+    options: [
+      'Cuando las partes no estén de acuerdo en la reparación de los daños'
+    ],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 28,
-    text: '',
-    options: [''],
+    text:
+        'Los conductores que violen lo dispuesto en el Reglamento de Tránsito y muestren síntomas de conducir en estado de ebriedad serán:',
+    options: ['Presentados ante el Oficial calificador o autoridad competente'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 29,
-    text: '',
-    options: [''],
+    text:
+        '¿Es una obligación de los agentes de tránsito auxiliar de manera inmediata a todos aquellos conductores en caso de descompostura del vehículo?',
+    options: ['Sí, es su obligación'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 30,
-    text: '',
-    options: [''],
+    text:
+        'Cuando solo existan daños materiales en un accidente, el agente de tránsito está obligado a:',
+    options: [
+      'Exhortar a los afectados, a fin de que lleguen a un arreglo inmediato para evitar el entorpecimiento de la circulación'
+    ],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 31,
-    text: '',
-    options: [''],
+    text:
+        '¿Cuál es el límite de alcohol espirado para los operadores de transportes de sustancias peligrosas, de carga o de transportes de pasajeros?',
+    options: ['Ninguna cantidad de alcohol en la sangre o en aire espirado'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 32,
-    text: '',
-    options: [''],
+    text:
+        '¿Qué procede cuando su vehículo tiene instaladas torretas, faros rojos, o dispositivos usados en vehículos de emergencia o patrullas? ',
+    options: ['Multa de 20 UMAs'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 33,
-    text: '',
-    options: [''],
+    text: '¿De qué color deberán ser las luces delanteras de los vehículos?',
+    options: ['Blanco'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 34,
-    text: '',
-    options: [''],
+    text:
+        '¿Los vehículos no deberán portar en la parte trasera faros de qué color?',
+    options: ['Blanco'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 35,
-    text: '',
-    options: [''],
+    text:
+        'Cuando un conductor, transite con un vehículo con llantas lisas o en mal estado, se procederá a:',
+    options: ['Multa de 5 UMAs'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 36,
-    text: '',
-    options: [''],
+    text:
+        'El Reglamento de Tránsito prevé disposiciones que deberán obedecer los peatones, en caso contrario será susceptible de ser: ',
+    options: ['Amonestado'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 37,
-    text: '',
-    options: [''],
+    text:
+        '¿Bajo qué circunstancias el conductor de un vehículo puede pasarse un semáforo en rojo?',
+    options: ['Solo si un oficial de tránsito lo indica'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 38,
-    text: '',
-    options: [''],
+    text: '¿Para qué sirven las rayas longitudinales en el pavimento?',
+    options: [
+      'Delimitan los carriles de circulación y guían a los conductores dentro de los mismos'
+    ],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 39,
-    text: '',
-    options: [''],
+    text: '¿Para qué sirven las rayas transversales en el pavimento?',
+    options: [
+      'Indican el límite de parada de los vehículos y delimitan la zona de cruce de peatones'
+    ],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 40,
-    text: '',
-    options: [''],
+    text:
+        'Si el vehículo que conduce carece de direccionales o en su caso no funcionan y requiere cambiar de dirección, deberá:',
+    options: [
+      'Hacer la señal respectiva con el brazo izquierdo extendido hacia arriba, si el cambio es a la derecha y extendiéndolo hacia abajo, si va a hacerlo hacia la izquierda'
+    ],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 41,
-    text: '',
-    options: [''],
+    text:
+        'El conductor que se aproxime a un crucero de ferrocarril deberá hacer alto total a una distancia mínima de:',
+    options: ['5 metros del riel más cercano del cruce del ferrocarril'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 42,
-    text: '',
-    options: [''],
+    text: '¿Qué función tienen los fantasmas o indicadores de alumbrado?',
+    options: ['Delimitan la orilla de los acotamientos'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 43,
-    text: '',
-    options: [''],
+    text: '¿Cuál es el objeto de las señales restrictivas?',
+    options: [
+      'Indicar determinadas limitaciones o prohibiciones que regulen el tránsito'
+    ],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 44,
-    text: '',
-    options: [''],
+    text:
+        '¿En qué caso se permite efectuar carreras o arrancones en la vía pública?',
+    options: ['No están permitidos'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 45,
-    text: '',
-    options: [''],
+    text:
+        '¿En qué condiciones se permite la instalación y el uso de sistemas antirradares o detector de radares de velocidad?',
+    options: ['Bajo ninguna condición'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 46,
-    text: '',
-    options: [''],
+    text:
+        '¿Sería una causa por la cual no se expida o reexpida una licencia y/o permiso para conducir?',
+    options: [
+      'Cuando la documentación exhibida sea falsa o proporcionen informes falsos en la solicitud correspondiente'
+    ],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 47,
-    text: '',
-    options: [''],
+    text:
+        'Las ambulancias, patrullas de policía y los vehículos de bomberos tienen preferencia de paso, siempre y cuando:',
+    options: ['Circulen con la sirena o con la torreta luminosa y encendida'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 48,
-    text: '',
-    options: [''],
+    text:
+        '¿Qué se debe hacer cuando los conductores pretendan incorporarse a una vía primaria?',
+    options: ['Ceder el paso a los vehículos que circulen por la misma'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 49,
-    text: '',
-    options: [''],
+    text: '¿Por dónde queda prohibido rebasar a otro vehículo?',
+    options: ['Por el acotamiento'],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 50,
-    text: '',
-    options: [''],
+    text:
+        '¿Cómo deben de actuar los conductores de vehículos implicados en accidentes donde resulten personas lesionadas o fallecidas?',
+    options: [
+      'Permanecer en el lugar del accidente para prestar o facilitar asistencia al lesionado o lesionados, procurando que se dé aviso al personal de auxilio y autoridad competente'
+    ],
     correctAnswerIndex: 0,
   ),
+  Question(
+      id: 51,
+      text: '¿Cuál es el objeto de las señales preventivas?',
+      options: [
+        'Advertir la existencia y naturaleza de un peligro o cambio de situación en la vía pública'
+      ],
+      correctAnswerIndex: 0),
+  Question(
+      id: 52,
+      text: '¿En qué caso se permite estacionarse en segunda fila?',
+      options: ['En ningún caso'],
+      correctAnswerIndex: 0),
+  Question(
+      id: 53,
+      text:
+          'Indique cuál es la condición para que los vehículos puedan realizar el ascenso y descenso de pasajeros',
+      options: ['Que el vehículo esté sin movimiento.'],
+      correctAnswerIndex: 0),
+  Question(
+      id: 54,
+      text: '¿Cuál es el objeto de las señales informativas?',
+      options: [
+        'Servir de guía para localizar o identificar calles, carreteras, nombres de poblaciones y lugares de interés con servicios existentes'
+      ],
+      correctAnswerIndex: 0),
 ];
