@@ -1,3 +1,6 @@
+import 'dart:ffi';
+
+import 'package:guia_examen_de_licencia_de_conducir_edomex/models/question_stat.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 
@@ -62,20 +65,37 @@ class LocalDB {
   }
 
   //Get viewed questions
-  Future<List<String>> getViewedQuestions() async {
+  Future<List<QuestionStat>> getViewedQuestions() async {
     final db = await database;
     final List<Map<String, dynamic>> maps = await db.query('user_stats');
 
-    final List<String> viewedQuestions = [];
-    for (var map in maps) {
-      viewedQuestions.add(map['question_id']);
-    }
-    return viewedQuestions;
+    return List.generate(maps.length, (i) {
+      print(maps[i]);
+      return QuestionStat(
+        id: int.parse(maps[i]['question_id']),
+        viewCount: maps[i]['view_count'],
+      );
+    });
   }
 
   // Marcar una pregunta como vista
   Future<void> markQuestionAsViewed(int questionId) async {
     final db = await database;
+
+    //check if the question record exists
+    final List<Map<String, dynamic>> maps = await db
+        .query('user_stats', where: 'question_id = ?', whereArgs: [questionId]);
+    if (maps.isEmpty) {
+      await db.insert(
+        'user_stats',
+        {
+          'question_id': questionId,
+          'is_correct': 0,
+        },
+        conflictAlgorithm: ConflictAlgorithm.replace,
+      );
+    }
+
     await db.rawUpdate('''
       UPDATE user_stats
       SET view_count = view_count + 1

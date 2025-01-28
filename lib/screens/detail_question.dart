@@ -26,10 +26,7 @@ class _QuestionDetailScreenState extends State<QuestionDetailScreen> {
     super.initState();
     currentIndex = widget.initialIndex;
     // Marcar la pregunta como vista al abrirla
-    //In 5 seconds, mark the question as viewed
-    Future.delayed(const Duration(seconds: 5), () {
-      LocalDB().markQuestionAsViewed(widget.question.id);
-    });
+    LocalDB().markQuestionAsViewed(widget.question.id);
   }
 
   void goToRandomQuestion() {

@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:guia_examen_de_licencia_de_conducir_edomex/models/question_stat.dart';
 import 'package:guia_examen_de_licencia_de_conducir_edomex/screens/detail_question.dart';
 import 'package:guia_examen_de_licencia_de_conducir_edomex/services/local_db.dart';
 import '../models/question.dart'; // Importa el modelo de pregunta
@@ -16,7 +17,7 @@ class StudyMode extends StatefulWidget {
 class _StudyModeState extends State<StudyMode> {
   int currentQuestionIndex = 0; // Índice de la pregunta actual
   bool showFeedback = false; // Mostrar retroalimentación (correcta/incorrecta)
-  List<String> viewedQuestions = []; // Lista de preguntas vistas
+  List<QuestionStat> viewedQuestions = []; // Lista de preguntas vistas
 
   @override
   void initState() {
@@ -26,6 +27,7 @@ class _StudyModeState extends State<StudyMode> {
 
   void loadViewedQuestions() async {
     final viewedQuestions = await LocalDB().getViewedQuestions();
+
     setState(() {
       this.viewedQuestions = viewedQuestions;
     });
@@ -76,7 +78,10 @@ class _StudyModeState extends State<StudyMode> {
       itemCount: questions.length,
       itemBuilder: (context, index) {
         final question = questions[index];
-        final viewCount = viewedQuestions.contains(question.id) ? 2 : 0;
+        final viewCount = viewedQuestions
+            .firstWhere((element) => element.id == question.id, orElse: () {
+          return QuestionStat(id: question.id, viewCount: 0);
+        }).viewCount;
 
         return GestureDetector(
           onTap: () {
@@ -89,7 +94,9 @@ class _StudyModeState extends State<StudyMode> {
                   initialIndex: index,
                 ),
               ),
-            );
+            ).then((_) {
+              loadViewedQuestions();
+            });
           },
           child: Card(
             color: viewCount == 0
