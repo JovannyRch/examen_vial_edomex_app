@@ -53,7 +53,7 @@ class _StudyModeState extends State<StudyMode> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Modo Estudio'), // Título de la pantalla
+        title: const Text('Guía de Estudio'), // Título de la pantalla
         centerTitle: true,
         actions: [
           IconButton(

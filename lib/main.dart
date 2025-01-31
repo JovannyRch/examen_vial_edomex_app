@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:guia_examen_de_licencia_de_conducir_edomex/const/colors.dart';
 import 'package:guia_examen_de_licencia_de_conducir_edomex/screens/home_screen.dart';
 
 void main() => runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
       title: 'Examen Víal Edomex',
       theme: ThemeData(
         primarySwatch: createMaterialColor(
-          const Color(0xFF611232),
+          kMainColor,
         ),
       ),
       debugShowCheckedModeBanner: false,

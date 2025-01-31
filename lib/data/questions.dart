@@ -6,21 +6,13 @@ final List<Question> questions = [
     text: 'Las señales de tránsito se clasifican en: ',
     options: [
       "Preventivas (Amarillas): Advierten peligro [br][br]Restrictivas (Rojas con negro): Limitan o prohíben, tienen el objeto de regular el tránsito. [br][br]Informativas (Azules): Tienen por objeto servir de guía para localizar o identificar calles o carreteras, así como nombres de poblaciones y lugares de interés, con servicios existentes",
-      '50 km/h',
-      '60 km/h',
-      '70 km/h'
     ],
     correctAnswerIndex: 0,
   ),
   Question(
     id: 2,
     text: '¿Cuántos pasajeros pueden viajar dentro de un vehículo?',
-    options: [
-      'Los indicados en la tarjeta de circulación',
-      'Alto',
-      'Prohibido el paso',
-      'Precaución'
-    ],
+    options: ['Los indicados en la tarjeta de circulación'],
     correctAnswerIndex: 0,
   ),
   Question(
